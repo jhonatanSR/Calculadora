@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body onkeypress="teclado()">
+    <div>
+        <table>
+            <tr>
+               <td colspan="4"><input type="text" value="0" disabled id="display"></td> 
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="8" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="9" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="*" onclick="guardarOperador(this)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="5" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="6" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="/" onclick="guardarOperador(this)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="2" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="3" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="+" onclick="guardarOperador(this)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="limpar()"></td>
+                <td><input type="button" value="0" onclick="atualizarDisplay(this)"></td>
+                <td><input type="button" value="=" onclick="resultado(this)"></td>
+                <td><input type="button" value="-" onclick="guardarOperador(this)"></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
